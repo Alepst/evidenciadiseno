@@ -1,0 +1,5 @@
+var carrera = prompt("Ingresa tu carrera")
+var grupo = prompt("Ingresa tu grupo")
+let nombre = prompt("Ingresa tu nombre")
+const edad = prompt('Ingresa tu edad')
+document.write(carrera+" "+grupo+" "+nombre+" "+edad)
