@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Evento querySelector</title>
+	<link rel="stylesheet" type="text/css" href="estilosjs.css">
+</head>
+<body>
+	<font face="Arial">
+	<div id= "midivi">
+		<p id="quer">Este es un elemento párrafo con id="demo" en un div.</p>
+	</div>
+	<p>Haga clic en el botón para cambiar el texto del elemento párrafo en el div.</p>
+	<button onclick="mifuncion()">Inténtalo</button>
+	<script type="text/javascript">
+		function mifuncion() {
+			var x = document.getElementById('midivi')
+			x.querySelector("#quer").innerHTML = "¡Hola Mundo!"
+		}
+	</script>
+</body>
+</html>

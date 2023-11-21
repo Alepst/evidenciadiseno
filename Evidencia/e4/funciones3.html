@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Funciones de Arrays JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h2>Funciones de Arrays JavaScript</h2>
+	<script type="text/javascript">
+		fruits =["Banana", "naranja", "manzana", "mango"]
+		document.write("Arreglo original <br>")
+		document.write(fruits,"<br><br>")
+
+		document.write("Arreglo sin el último elemento <br>")
+		fruits.pop()
+		document.write(fruits, "<br><br>")
+		document.write("Arreglo con 2 elementos nuevos al final <br>")
+		fruits.push("kiwi","sandia")
+		document.write(fruits, "<br><br>")
+
+		document.write("Arreglo que agrega un separador entre cada elemento <br>")
+		let texto = fruits.join(" y también ")
+		document.write(texto, "<br>")
+	</script>
+
+</body>
+</html>

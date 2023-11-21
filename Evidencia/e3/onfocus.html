@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Evento Focus</title>
+	<link rel="stylesheet" type="text/css" href="estilosjs.css">
+</head>
+<body>
+	<h1>Eventos HTML DOM</h1>
+	<h2>El evento onfocus</h2>
+	<p>Introduzca su nombre: <input type="text" onfocus="mifuncion(this)"></p>
+	<p>Cuando el campo de entrada se enfoca, una función cambia el color de fondo.</p>
+	<script type="text/javascript">
+		function mifuncion(x) {
+			x.style.background= "gray"
+		}
+	</script>
+</body>
+</html>

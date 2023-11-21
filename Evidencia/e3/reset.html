@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Evento Reset</title>
+	<link rel="stylesheet" type="text/css" href="estilosjs.css">
+</head>
+<body>
+	<p>Asignar un evento "onreset" a un elemento de formulario.</p>
+	<p>Cuando reinicia el formulario, se activa una función que genera un texto.</p>
+	<form onreset="mifunction()">
+		Ingrese su nombre: <input type="text" >
+		<input type="reset">
+	</form>
+	<p id="formu"></p>
+	<script type="text/javascript">
+		function mifunction() {
+			document.getElementById('formu').innerHTML = "El formulario ha sido reiniciado"
+		}
+	</script>
+</body>
+</html>

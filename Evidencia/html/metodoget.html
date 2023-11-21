@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejemplo getElementById</title>
+	<link rel="stylesheet" type="text/css" href="estilosjs.css">
+</head>
+<body>
+	<h1><p id="texto">Técnico programador Web</p></h1>
+	<button onclick="cambiacolor('blue')">Azul</button>
+	<button onclick="cambiacolor('red')">Rojo</button>
+	<script type="text/javascript">
+		function cambiacolor(nuevocolor){
+			var elem = document.getElementById('texto')
+			elem.style.color=nuevocolor
+		}
+	</script>
+
+</body>
+</html>

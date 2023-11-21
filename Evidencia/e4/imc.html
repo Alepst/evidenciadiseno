@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Indice de masa corporal
+	</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h2>Indice de masa corporal</h2>
+	<script type="text/javascript">
+		function calcularIMC(peso, altura){
+			return peso / Math.pow(altura, 2)
+		}
+		peso = prompt("Cuánto pesas: ", "en kg")
+		altura = prompt("Cuánto mides: ", "en metros")
+		var IMC =Math.round(calcularIMC(peso, altura))
+
+		if (IMC >= 18.5 && IMC <24.9){
+			document.write("El IMC es "+IMC + " Tienes un peso normal")
+		} else if (IMC >= 25 && IMC <29.99){
+			document.write("El IMC es "+IMC + " Tienes sobrepeso")
+		} else if(IMC >=30 && IMC <34.99){
+			document.write("El IMC es "+IMC + " Tienes obesidad moderada")
+		} else if (IMC >= 35 && IMC <39.99){
+			document.write("El IMC es "+IMC + " Tienes obesidad severa")
+		} else{
+			document.write("No aplica con ese peso o estatura")
+		}
+	</script>
+</body>
+</html>

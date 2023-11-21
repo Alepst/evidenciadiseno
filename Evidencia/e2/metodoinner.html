@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inner HTML</title>
+	<link rel="stylesheet" href="estilosjs.css">
+</head>
+<body>
+	<p>innerHTML controla lo que puede incluirse en un elemeneto</p>
+	<div id="salida">
+	</div>
+	<script type="text/javascript">
+		let num
+		num = prompt("Escribe un número", "0")
+		let resultado = num*10
+		document.getElementById('salida').innerHTML=("Por 10 es: "+resultado);
+	</script>
+</body>
+</html>

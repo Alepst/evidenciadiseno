@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Funciones de Cadenas JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h2>Funciones de Cadenas JavaScript</h2>
+	<script type="text/javascript">
+		let	text1="Estás programando"
+		let text2 = "con funciones predefinidas"
+		let text3 = "para unir cadenas de texto con JavaScript"
+		let concatena = text1.concat(" ", text2, " ",text3)
+		document.write(concatena, "<br><br>")
+
+		let texto1 = "Técnico Programación Web"
+		let extraer = texto1.substring(2,14)
+		document.write("Aquí extraé la parte indicada de la cadena: ", extraer, "<br><br>")
+
+		let texto2="Estás programando en JavaScript con funciones predefinidas"
+		arreglo1 = texto2.split(" ")
+		document.write("Aquí separa por comas la cadena: ", arreglo1, "<br><br>")
+		let palabra = arreglo1[1]
+		arreglo2 = texto2.split(" ", 4)
+		document.write("Aquí separa por comas las primeras 4 palabras de la cadena: ", arreglo2)
+	</script>
+</body>
+</html>

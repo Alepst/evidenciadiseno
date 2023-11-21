@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilosjs.css">
+    </head>
+    <body> <center>
+        <h1>Calculadora simple</h1><br>
+        Número 1: <input id="num1" type="number"/><br><br>
+        Número 2: <input id="num2" type="number"/><br>
+        <hr>
+        <input type="button" value="sumar" onclick="operaciones('sumar'); return false;">
+        <input type="button" value="restar" onclick="operaciones('restar'); return false;">
+        <input type="button" value="multiplicar" onclick="operaciones('multiplicar'); return false;">
+        <input type="button" value="dividir" onclick="operaciones('dividir'); return false;">
+        <input type="button" value="exponente" onclick="operaciones('exponente'); return false;">
+
+        <script src="operaciones.js"></script>
+        <p id="resultado" style="color: green; font-size: x-large;"></p>
+    </center>
+    </body>
+</html>

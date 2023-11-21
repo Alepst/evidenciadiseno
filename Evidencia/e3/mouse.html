@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Evento Mousedown y Mouseup</title>
+	<link rel="stylesheet" type="text/css" href="estilosjs.css">
+</head>
+<body>
+	<h1>Eventos DOM HTML</h1>
+	<h2>Evento onmousedown y onmouseup</h2>
+	<p>Cómo usar los eventos "onmousedown" y "onmouseup" para un párrafo</p>
+	<p id="mouseevn">Presiona aquí</p>
+	<script type="text/javascript">
+		document.getElementById('mouseevn').onmousedown = function(){presionaMouse()}
+		document.getElementById('mouseevn').onmouseup = function(){soltarmouse()}
+		function presionaMouse(){
+			document.getElementById("mouseevn").innerHTML = "El botón del ratón se mantiene presionado."
+		}
+		function soltarmouse(){
+			document.getElementById("mouseevn").innerHTML = "Soltaste el botón del mouse."
+		}
+	</script>
+</body>
+</html>
